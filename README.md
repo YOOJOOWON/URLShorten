@@ -3,11 +3,11 @@
 스마일게이트 서버개발캠프 3기 면접 과제 자료입니다.
 
 # 소스 설명
-main : 메인 함수
-GUI : awt를 이용한 GUI 구현
-RBTree : Red Black Tree
-Base58 : binary-to-text encoding
-URLShortner : URL 단축을 위한 클래스
+1. main : 메인 함수
+2. GUI : awt를 이용한 GUI 구현
+3. RBTree : Red Black Tree
+4. Base58 : binary-to-text encoding
+5. URLShortner : URL 단축을 위한 클래스
 
 
 # 목표
