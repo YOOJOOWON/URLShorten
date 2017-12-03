@@ -40,7 +40,7 @@ public class GUI {
     
     void initGUI(){
     	
-    	  mainFrame = new Frame("BTC Calculater");
+    	  mainFrame = new Frame("URL Shortner");
           mainFrame.setSize(600, 400);
           mainFrame.setLayout(new GridLayout(12, 2));
           mainFrame.setLocationRelativeTo(null);
