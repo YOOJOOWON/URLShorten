@@ -107,7 +107,7 @@ public class URLShortner {
 		
 		// KEY3
 		// key3는 rbtree에서 pair로 묶을 val값
-		// 111 ~ zzz까지 최대 195112개의 node를 가질 수 있다
+		// 123 ~ zyz 범위의 value를 지닌 node를 만들 수 있다
 		int key3_int = tree.findName(st);
 		
 		String key;
@@ -119,6 +119,7 @@ public class URLShortner {
 		}
 		else{
 			key3_int = tree.findEmpty();
+			if (key3_int < 0){	return "data is full";	}
 			tree.insert(tree.root, key3_int, st);
 			key3 = Base58.IntToBase58(key3_int, 3);
 		}
@@ -138,6 +139,9 @@ public class URLShortner {
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			return "It's not URL";
+		}
+		if (!aURL.getHost().equals("localhost")){
+			return "Wrong input (not localhost)";
 		}
 
 		String st = aURL.getPath();
